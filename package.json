@@ -1,0 +1,22 @@
+{
+  "name": "@kapouer/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapouer/eslint-config.git"
+  },
+  "peerDeependencies": {
+    "eslint": ">= 3"
+  },
+  "author": "Jérémy Lal <kapouer@melix.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapouer/eslint-config/issues"
+  },
+  "homepage": "https://github.com/kapouer/eslint-config#readme"
+}
