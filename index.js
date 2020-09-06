@@ -1,6 +1,7 @@
 module.exports = {
   "parserOptions": {
-    "ecmaVersion": 11
+    "ecmaVersion": 11,
+    "sourceType": "module"
   },
   "rules": {
     "indent": ["error", "tab", {
