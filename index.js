@@ -6,7 +6,8 @@ module.exports = {
   "rules": {
     "indent": ["error", "tab", {
       "MemberExpression": 1,
-      "outerIIFEBody": "off"
+      "outerIIFEBody": "off",
+      "SwitchCase": 1
     }],
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
