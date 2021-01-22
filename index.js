@@ -19,6 +19,9 @@ module.exports = {
     "no-restricted-globals": ["error", {
       "name": "isNaN",
       "message": "Use Number.isNaN"
+    }, {
+      "name": "parent",
+      "message": "Use window.parent"
     }]
   },
   "env": {
