@@ -20,13 +20,34 @@ module.exports = {
       "name": "isNaN",
       "message": "Use Number.isNaN"
     }, {
-      "name": "parent",
-      "message": "Use window.parent"
-    }]
+        "name": "parent",
+        "message": "Use window.parent"
+      }]
   },
   "env": {
+    "browser": true,
     "node": true,
     "es6": true
+  },
+  "parser": "@babel/eslint-parser",
+  "plugins": [
+    "@babel"
+  ],
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "plugins": [
+        "@babel/plugin-syntax-class-properties"
+      ],
+      "presets": [
+        [
+          "@babel/env",
+          {
+            "targets": "supports es6-module and supports private-class-fields"
+          }
+        ]
+      ]
+    }
   },
   "extends": "eslint:recommended"
 };
