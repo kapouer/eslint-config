@@ -1,8 +1,4 @@
 module.exports = {
-  "parserOptions": {
-    "ecmaVersion": 11,
-    "sourceType": "module"
-  },
   "rules": {
     "indent": ["error", "tab", {
       "MemberExpression": 1,
@@ -35,6 +31,8 @@ module.exports = {
   ],
   "parserOptions": {
     "requireConfigFile": false,
+    "ecmaVersion": 11,
+    "sourceType": "module",
     "babelOptions": {
       "plugins": [
         "@babel/plugin-syntax-class-properties"
