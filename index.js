@@ -10,7 +10,7 @@ module.exports = {
     "semi": ["error", "always"],
     "no-multi-spaces": "warn",
     "space-infix-ops": "warn",
-    "no-console": "warn",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-empty": "warn",
     "no-unused-vars": ["warn", { "args": "none" }],
     "no-restricted-globals": ["error", {
