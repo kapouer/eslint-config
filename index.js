@@ -5,6 +5,7 @@ module.exports = {
       "outerIIFEBody": "off",
       "SwitchCase": 1
     }],
+    "no-use-before-define": ["error", "nofunc"],
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
     "no-multi-spaces": "warn",
@@ -16,9 +17,19 @@ module.exports = {
       "name": "isNaN",
       "message": "Use Number.isNaN"
     }, {
-        "name": "parent",
-        "message": "Use window.parent"
-      }]
+      "name": "parent",
+      "message": "Use window.parent"
+    }],
+    "no-caller": "error",
+    "no-constructor-return": "error",
+    "no-else-return": "error",
+    "no-eval": "error",
+    "no-new-func": "error",
+    "no-implicit-coercion": ["warn", { "disallowTemplateShorthand": true, "boolean": true, "number": true, "string": true }],
+    "no-multi-spaces": "error",
+    "no-implied-eval": "error",
+    "yoda": "error",
+    "prefer-const": "error"
   },
   "env": {
     "browser": true,
