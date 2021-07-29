@@ -5,6 +5,7 @@ module.exports = {
       "outerIIFEBody": "off",
       "SwitchCase": 1
     }],
+    "no-var": "error",
     "no-use-before-define": ["error", "nofunc"],
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
