@@ -22,7 +22,6 @@ module.exports = {
     }],
     "no-caller": "error",
     "no-constructor-return": "error",
-    "no-else-return": "error",
     "no-eval": "error",
     "no-new-func": "error",
     "no-implicit-coercion": ["warn", { "disallowTemplateShorthand": true, "boolean": true, "number": true, "string": true }],
