@@ -19,7 +19,7 @@
     "@babel/preset-env": "^7.14.8"
   },
   "peerDeependencies": {
-    "eslint": ">= 3"
+    "eslint": ">= 7"
   },
   "author": "Jérémy Lal <kapouer@melix.org>",
   "license": "MIT",
