@@ -1,4 +1,4 @@
-modul.exports = {
+module.exports = {
 	"rules": {
 		"indent": ["error", "tab", {
 			"MemberExpression": 1,
