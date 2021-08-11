@@ -28,7 +28,6 @@ module.exports = {
 		"no-implicit-coercion": ["warn", { "disallowTemplateShorthand": true, "boolean": true, "number": true, "string": true }],
 		"no-multi-spaces": "error",
 		"no-implied-eval": "error",
-		"no-unsafe-optional-chaining": ["error", { "disallowArithmeticOperators": true }],
 		"yoda": "error",
 		"prefer-const": "error"
 	},
@@ -39,8 +38,7 @@ module.exports = {
 	},
 	"parser": "@babel/eslint-parser",
 	"plugins": [
-		"@babel",
-		"prefer-optional-chaining"
+		"@babel"
 	],
 	"parserOptions": {
 		"requireConfigFile": false,
