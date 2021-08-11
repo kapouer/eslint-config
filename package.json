@@ -1,6 +1,6 @@
 {
   "name": "@kapouer/eslint-config",
-  "version": "1.5.0",
+  "version": "1.4.2",
   "description": "eslint config for usual nodejs/browser development",
   "keywords": [
     "eslint",
