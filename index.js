@@ -13,6 +13,7 @@ module.exports = {
 		"space-infix-ops": "warn",
 		"no-console": ["error", { "allow": ["warn", "error"] }],
 		"no-empty": "warn",
+		"no-unreachable-loop": "warn",
 		"no-unused-vars": ["warn", { "args": "none" }],
 		"no-restricted-globals": ["error", {
 			"name": "isNaN",
