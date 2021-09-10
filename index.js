@@ -11,7 +11,7 @@ module.exports = {
 		"semi": ["error", "always"],
 		"no-multi-spaces": "warn",
 		"space-infix-ops": "warn",
-		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"no-console": ["error", { "allow": ["warn", "error", "info"] }],
 		"no-empty": "warn",
 		"no-unreachable-loop": "warn",
 		"no-unused-vars": ["warn", { "args": "none" }],
@@ -31,7 +31,14 @@ module.exports = {
 		"no-implied-eval": "error",
 		"no-unsafe-optional-chaining": ["error", { "disallowArithmeticOperators": true }],
 		"yoda": "error",
-		"prefer-const": "error"
+		"prefer-const": "error",
+		"no-underscore-dangle": "error",
+		"no-nested-ternary": "error",
+		"no-lonely-if": "error",
+		"no-useless-call": "error",
+		"no-return-await": "error",
+		"no-proto": "error",
+		"no-new-wrappers": "error"
 	},
 	"env": {
 		"browser": true,
