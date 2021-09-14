@@ -32,13 +32,14 @@ module.exports = {
 		"no-unsafe-optional-chaining": ["error", { "disallowArithmeticOperators": true }],
 		"yoda": "error",
 		"prefer-const": "error",
-		"no-underscore-dangle": "error",
-		"no-nested-ternary": "error",
-		"no-lonely-if": "error",
-		"no-useless-call": "error",
+		"no-underscore-dangle": "warn",
+		"no-nested-ternary": "warn",
+		"no-lonely-if": "warn",
+		"no-useless-call": "warn",
 		"no-return-await": "error",
 		"no-proto": "error",
-		"no-new-wrappers": "error"
+		"no-new-wrappers": "error",
+		"prefer-arrow-callback": "warn"
 	},
 	"env": {
 		"browser": true,
