@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/kapouer/eslint-config/issues"
   },
+  "eslintConfig": {
+    "extends": "."
+  },
   "homepage": "https://github.com/kapouer/eslint-config#readme"
 }
