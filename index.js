@@ -16,6 +16,9 @@ module.exports = {
 		"no-unreachable-loop": "warn",
 		"no-unused-vars": ["warn", { "args": "none" }],
 		"no-restricted-globals": ["error", {
+			"name": "name",
+			"message": "Do not use 'name' global variable"
+		}, {
 			"name": "isNaN",
 			"message": "Use Number.isNaN"
 		}, {
