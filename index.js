@@ -39,7 +39,7 @@ module.exports = {
 		"no-return-await": "error",
 		"no-proto": "error",
 		"no-new-wrappers": "error",
-		"prefer-arrow-callback": "warn"
+		"@kapouer/no-return-in-loop/no-return-in-loop": "error"
 	},
 	"env": {
 		"browser": true,
@@ -48,7 +48,8 @@ module.exports = {
 	},
 	"parser": "@babel/eslint-parser",
 	"plugins": [
-		"@babel"
+		"@babel",
+		"@kapouer/no-return-in-loop"
 	],
 	"parserOptions": {
 		"requireConfigFile": false,
