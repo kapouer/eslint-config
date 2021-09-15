@@ -42,6 +42,7 @@ module.exports = {
 		"no-return-await": "error",
 		"no-proto": "error",
 		"no-new-wrappers": "error",
+		"prefer-arrow-callback": "warn",
 		"@kapouer/no-return-in-loop/no-return-in-loop": "error"
 	},
 	"env": {
@@ -72,6 +73,6 @@ module.exports = {
 			]
 		}
 	},
-	"extends": "eslint:recommended"
+	"extends": ["eslint:recommended"]
 };
 
