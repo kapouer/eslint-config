@@ -10,7 +10,7 @@ module.exports = {
 		"linebreak-style": ["error", "unix"],
 		"semi": ["error", "always"],
 		"space-infix-ops": "warn",
-		"no-console": ["error", { "allow": ["warn", "error", "info"] }],
+		"no-console": ["error", { "allow": ["warn", "error", "info", "group", "groupEnd"] }],
 		"no-empty": "warn",
 		"no-unreachable-loop": "warn",
 		"no-unused-vars": ["warn", { "args": "none" }],
