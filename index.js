@@ -13,6 +13,7 @@ module.exports = {
 		"no-console": ["error", { "allow": ["warn", "error", "info", "group", "groupEnd"] }],
 		"no-empty": "warn",
 		"no-unreachable-loop": "warn",
+		"no-unused-private-class-members": "error",
 		"no-unused-vars": ["warn", { "args": "none" }],
 		"no-restricted-globals": ["error", {
 			"name": "name",
