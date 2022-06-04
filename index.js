@@ -58,8 +58,6 @@ module.exports = {
 	],
 	"parserOptions": {
 		"requireConfigFile": false,
-		"ecmaVersion": 11,
-		"sourceType": "module",
 		"babelOptions": {
 			"plugins": [],
 			"presets": [
