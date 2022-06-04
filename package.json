@@ -7,6 +7,9 @@
     "eslint-config"
   ],
   "main": "index.js",
+  "files": [
+    ".npmrc"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kapouer/eslint-config.git"
