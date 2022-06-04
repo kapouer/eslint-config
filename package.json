@@ -1,6 +1,6 @@
 {
   "name": "@kapouer/eslint-config",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": "eslint config for usual nodejs/browser development",
   "keywords": [
     "eslint",
@@ -12,15 +12,14 @@
     "url": "git+https://github.com/kapouer/eslint-config.git"
   },
   "dependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/eslint-plugin": "^7.16.5",
-    "@babel/plugin-syntax-class-properties": "^7.12.13",
-    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-env": "^7.18.2",
     "@kapouer/eslint-plugin-no-return-in-loop": "^1.0.0"
   },
   "peerDeependencies": {
-    "eslint": ">= 7"
+    "eslint": ">= 8.17.0"
   },
   "author": "Jérémy Lal <kapouer@melix.org>",
   "license": "MIT",

@@ -61,9 +61,7 @@ module.exports = {
 		"ecmaVersion": 11,
 		"sourceType": "module",
 		"babelOptions": {
-			"plugins": [
-				"@babel/plugin-syntax-class-properties"
-			],
+			"plugins": [],
 			"presets": [
 				[
 					"@babel/env",
