@@ -64,7 +64,7 @@ module.exports = {
 				[
 					"@babel/env",
 					{
-						"targets": "supports es6-module and supports private-class-fields"
+						"targets": "supports es6-module"
 					}
 				]
 			]
