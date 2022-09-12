@@ -49,5 +49,5 @@ Put these into your ~/.npmrc
 public-hoist-pattern[]=@babel/*
 public-hoist-pattern[]=eslint
 public-hoist-pattern[]=eslint-*
-public-hoist-pattern[]=@kapouer/no-return-in-loop
+public-hoist-pattern[]=@kapouer/eslint-plugin-no-return-in-loop
 ```
