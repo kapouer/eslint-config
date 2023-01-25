@@ -12,10 +12,10 @@
     "url": "git+https://github.com/kapouer/eslint-config.git"
   },
   "dependencies": {
-    "@babel/core": "^7.19.0",
-    "@babel/eslint-parser": "^7.18.9",
-    "@babel/eslint-plugin": "^7.18.10",
-    "@babel/preset-env": "^7.19.0",
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-plugin": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
     "@kapouer/eslint-plugin-no-return-in-loop": "^1.0.0"
   },
   "peerDeependencies": {
