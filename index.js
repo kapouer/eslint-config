@@ -64,7 +64,8 @@ module.exports = {
 				[
 					"@babel/env",
 					{
-						"targets": "supports es6-module"
+						"targets": "supports es6-module",
+						"shippedProposals": true
 					}
 				]
 			]
