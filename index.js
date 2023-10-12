@@ -49,28 +49,11 @@ module.exports = {
 	"env": {
 		"browser": true,
 		"node": true,
-		"es6": true
+		"es2024": true
 	},
-	"parser": "@babel/eslint-parser",
 	"plugins": [
-		"@babel",
 		"@kapouer/no-return-in-loop"
 	],
-	"parserOptions": {
-		"requireConfigFile": false,
-		"babelOptions": {
-			"plugins": [],
-			"presets": [
-				[
-					"@babel/env",
-					{
-						"targets": "supports es6-module",
-						"shippedProposals": true
-					}
-				]
-			]
-		}
-	},
 	"extends": ["eslint:recommended"]
 };
 

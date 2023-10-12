@@ -46,7 +46,6 @@ It's a good idea to override files/env as they usually depend on the project.
 Put these into your ~/.npmrc
 
 ```rc
-public-hoist-pattern[]=@babel/*
 public-hoist-pattern[]=eslint
 public-hoist-pattern[]=eslint-*
 public-hoist-pattern[]=@kapouer/eslint-plugin-no-return-in-loop
