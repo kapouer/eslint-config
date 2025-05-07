@@ -5,6 +5,9 @@ module.exports = {
 			"outerIIFEBody": "off",
 			"SwitchCase": 1
 		}],
+		"@stylistic/js/no-tabs": ["error", {
+			"allowIndentationTabs": true
+		}],
 		"no-var": "error",
 		"no-use-before-define": ["error", "nofunc"],
 		"@stylistic/js/linebreak-style": ["error", "unix"],
