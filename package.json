@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@kapouer/eslint-plugin-no-return-in-loop": "^1.0.0",
-    "@stylistic/eslint-plugin-js": "^4.2.0"
+    "@stylistic/eslint-plugin-js": "^3.1.0"
   },
   "peerDeependencies": {
     "eslint": "^8.53.0"
