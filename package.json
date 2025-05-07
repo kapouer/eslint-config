@@ -12,10 +12,11 @@
     "url": "git+https://github.com/kapouer/eslint-config.git"
   },
   "dependencies": {
-    "@kapouer/eslint-plugin-no-return-in-loop": "^1.0.0"
+    "@kapouer/eslint-plugin-no-return-in-loop": "^1.0.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0"
   },
   "peerDeependencies": {
-    "eslint": ">= 8.51.0"
+    "eslint": "^8.53.0"
   },
   "author": "Jérémy Lal <kapouer@melix.org>",
   "license": "MIT",

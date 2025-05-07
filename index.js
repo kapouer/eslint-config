@@ -1,15 +1,15 @@
 module.exports = {
 	"rules": {
-		"indent": ["error", "tab", {
+		"@stylistic/js/indent": ["error", "tab", {
 			"MemberExpression": 1,
 			"outerIIFEBody": "off",
 			"SwitchCase": 1
 		}],
 		"no-var": "error",
 		"no-use-before-define": ["error", "nofunc"],
-		"linebreak-style": ["error", "unix"],
-		"semi": ["error", "always"],
-		"space-infix-ops": "warn",
+		"@stylistic/js/linebreak-style": ["error", "unix"],
+		"@stylistic/js/semi": ["error", "always"],
+		"@stylistic/js/space-infix-ops": "warn",
 		"no-console": ["error", { "allow": ["warn", "error", "info", "group", "groupEnd", "debug"] }],
 		"no-empty": "warn",
 		"no-unreachable-loop": "warn",
@@ -31,7 +31,7 @@ module.exports = {
 		"no-new-func": "error",
 		"no-implicit-globals": "error",
 		"no-implicit-coercion": ["warn", { "disallowTemplateShorthand": true, "boolean": true, "number": true, "string": true }],
-		"no-multi-spaces": "error",
+		"@stylistic/js/no-multi-spaces": "error",
 		"no-implied-eval": "error",
 		"no-unsafe-optional-chaining": ["error", { "disallowArithmeticOperators": true }],
 		"yoda": "error",
@@ -52,6 +52,7 @@ module.exports = {
 		"es2024": true
 	},
 	"plugins": [
+		"@stylistic/js",
 		"@kapouer/no-return-in-loop"
 	],
 	"extends": ["eslint:recommended"]
