@@ -48,6 +48,14 @@ module.exports = {
 		"no-new-wrappers": "error",
 		"prefer-arrow-callback": "warn",
 		"@kapouer/no-return-in-loop/no-return-in-loop": "error",
+		"require-atomic-updates": "error",
+		"eqeqeq": ["error", "smart"],
+		"no-useless-return": "error",
+		"dot-notation": "error",
+		"no-useless-assignment": "error",
+		"no-self-compare": "error",
+		"no-promise-executor-return": "error",
+		"array-callback-return": ["error", { checkForEach: true }],
 		"redos-detector/no-unsafe-regex": "error"
 	},
 	"env": {
