@@ -13,11 +13,15 @@ module.exports = {
 		"@stylistic/js/linebreak-style": ["error", "unix"],
 		"@stylistic/js/semi": ["error", "always"],
 		"@stylistic/js/space-infix-ops": "warn",
-		"no-console": ["error", { "allow": ["warn", "error", "info", "group", "groupEnd", "debug"] }],
+		"no-console": ["error", {
+			"allow": ["warn", "error", "info", "group", "groupEnd", "debug"]
+		}],
 		"no-empty": "warn",
 		"no-unreachable-loop": "warn",
 		"no-unused-private-class-members": "error",
-		"no-unused-vars": ["warn", { "args": "none" }],
+		"no-unused-vars": ["warn", {
+			"args": "none"
+		}],
 		"no-restricted-globals": ["error", {
 			"name": "name",
 			"message": "Do not use 'name' global variable"
@@ -33,10 +37,17 @@ module.exports = {
 		"no-eval": "error",
 		"no-new-func": "error",
 		"no-implicit-globals": "error",
-		"no-implicit-coercion": ["warn", { "disallowTemplateShorthand": true, "boolean": true, "number": true, "string": true }],
+		"no-implicit-coercion": ["warn", {
+			"disallowTemplateShorthand": true,
+			"boolean": true,
+			"number": true,
+			"string": true
+		}],
 		"@stylistic/js/no-multi-spaces": "error",
 		"no-implied-eval": "error",
-		"no-unsafe-optional-chaining": ["error", { "disallowArithmeticOperators": true }],
+		"no-unsafe-optional-chaining": ["error", {
+			"disallowArithmeticOperators": true
+		}],
 		"yoda": "error",
 		"prefer-const": "error",
 		"no-underscore-dangle": "warn",
