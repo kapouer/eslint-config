@@ -54,7 +54,10 @@ module.exports = {
 		"dot-notation": "error",
 		"no-self-compare": "error",
 		"no-promise-executor-return": "error",
-		"array-callback-return": ["error", { checkForEach: true }],
+		"array-callback-return": ["error", {
+			"checkForEach": true,
+			"allowImplicit": true
+		}],
 		"redos-detector/no-unsafe-regex": "error"
 	},
 	"env": {
