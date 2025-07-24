@@ -52,7 +52,6 @@ module.exports = {
 		"eqeqeq": ["warn", "smart"],
 		"no-useless-return": "error",
 		"dot-notation": "error",
-		"no-useless-assignment": "error",
 		"no-self-compare": "error",
 		"no-promise-executor-return": "error",
 		"array-callback-return": ["error", { checkForEach: true }],
