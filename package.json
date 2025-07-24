@@ -7,6 +7,7 @@
     "eslint-config"
   ],
   "main": "index.js",
+  "files": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kapouer/eslint-config.git"
