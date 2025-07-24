@@ -56,7 +56,10 @@ module.exports = {
 		"no-self-compare": "error",
 		"no-promise-executor-return": "error",
 		"array-callback-return": ["error", { checkForEach: true }],
-		"redos-detector/no-unsafe-regex": "error"
+		"redos-detector/no-unsafe-regex": "error",
+		"@typescript-eslint/no-unnecessary-condition": ["error", {
+			"allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing": true
+		}]
 	},
 	"env": {
 		"browser": true,
@@ -64,10 +67,17 @@ module.exports = {
 		"es2024": true
 	},
 	"plugins": [
+		"@typescript-eslint",
 		"@stylistic/js",
 		"@kapouer/no-return-in-loop",
 		"redos-detector"
 	],
-	"extends": ["eslint:recommended"]
+	"root": true,
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"projectService": {
+			"allowDefaultProject": ['*.js', '*.mjs']
+		}
+	}
 };
-
