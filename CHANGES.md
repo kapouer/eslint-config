@@ -10,3 +10,8 @@ Version 2.1.0
 -------------
 
 Use @stylistic/js
+
+Version 2.2.0
+-------------
+
+Add eslint-plugin-redos-detector.

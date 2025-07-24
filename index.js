@@ -47,7 +47,8 @@ module.exports = {
 		"no-proto": "error",
 		"no-new-wrappers": "error",
 		"prefer-arrow-callback": "warn",
-		"@kapouer/no-return-in-loop/no-return-in-loop": "error"
+		"@kapouer/no-return-in-loop/no-return-in-loop": "error",
+		"redos-detector/no-unsafe-regex": "error"
 	},
 	"env": {
 		"browser": true,
@@ -56,7 +57,8 @@ module.exports = {
 	},
 	"plugins": [
 		"@stylistic/js",
-		"@kapouer/no-return-in-loop"
+		"@kapouer/no-return-in-loop",
+		"redos-detector"
 	],
 	"extends": ["eslint:recommended"]
 };
