@@ -1,18 +1,27 @@
-module.exports = {
+import globals from "globals";
+
+import js from '@eslint/js';
+import { defineConfig } from "eslint/config";
+import tseslint from 'typescript-eslint';
+import stylistic from '@stylistic/eslint-plugin';
+import redosDetector from 'eslint-plugin-redos-detector';
+import noreturnLoop from "@kapouer/eslint-plugin-no-return-in-loop";
+
+export default defineConfig([{
 	"rules": {
-		"@stylistic/js/indent": ["error", "tab", {
+		"@stylistic/indent": ["error", "tab", {
 			"MemberExpression": 1,
 			"outerIIFEBody": "off",
 			"SwitchCase": 1
 		}],
-		"@stylistic/js/no-tabs": ["error", {
+		"@stylistic/no-tabs": ["error", {
 			"allowIndentationTabs": true
 		}],
 		"no-var": "error",
 		"no-use-before-define": ["error", "nofunc"],
-		"@stylistic/js/linebreak-style": ["error", "unix"],
-		"@stylistic/js/semi": ["error", "always"],
-		"@stylistic/js/space-infix-ops": "warn",
+		"@stylistic/linebreak-style": ["error", "unix"],
+		"@stylistic/semi": ["error", "always"],
+		"@stylistic/space-infix-ops": "warn",
 		"no-console": ["error", { "allow": ["warn", "error", "info", "group", "groupEnd", "debug"] }],
 		"no-empty": "warn",
 		"no-unreachable-loop": "warn",
@@ -34,7 +43,7 @@ module.exports = {
 		"no-new-func": "error",
 		"no-implicit-globals": "error",
 		"no-implicit-coercion": ["warn", { "disallowTemplateShorthand": true, "boolean": true, "number": true, "string": true }],
-		"@stylistic/js/no-multi-spaces": "error",
+		"@stylistic/no-multi-spaces": "error",
 		"no-implied-eval": "error",
 		"no-unsafe-optional-chaining": ["error", { "disallowArithmeticOperators": true }],
 		"yoda": "error",
@@ -61,23 +70,26 @@ module.exports = {
 			"allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing": true
 		}]
 	},
-	"env": {
-		"browser": true,
-		"node": true,
-		"es2024": true
-	},
-	"plugins": [
-		"@typescript-eslint",
-		"@stylistic/js",
-		"@kapouer/no-return-in-loop",
-		"redos-detector"
-	],
-	"root": true,
-	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"projectService": {
-			"allowDefaultProject": ['*.js', '*.mjs']
+	languageOptions: {
+		ecmaVersion: 2024,
+		globals: {
+			...globals.browser,
+			...globals.node
+		},
+		parser: tseslint.parser,
+		parserOptions: {
+			projectService: {
+				"allowDefaultProject": ['*.js', '*.mjs']
+			}
 		}
-	}
-};
+	},
+	files: ['**/*.{js,ts,mjs}'],
+	"plugins": {
+		'@stylistic': stylistic,
+		'redos-detector': redosDetector,
+		'@kapouer/no-return-in-loop': noreturnLoop
+	},
+	"extends": [
+		[js.configs.recommended, tseslint.configs.recommendedTypeChecked],
+	]
+}]);
