@@ -6,47 +6,21 @@
 npm install --save-dev @kapouer/eslint-config
 ```
 
-In package.json:
+Either approve postinstall script, or create a ts(js)config.json file that contains at least:
 
 ```json
-"eslintConfig": {
- "extends": "@kapouer/eslint-config",
- "globals": {
-  "HttpError": true
- },
- "overrides": [
-  {
-   "files": [
-    "models/**",
-    "resources/**",
-    "routes/**",
-    "app.js"
-   ],
-   "env": {
-    "node": true,
-    "es6": true
-   }
-  },
-  {
-   "files": [
-    "public/js/**"
-   ],
-   "env": {
-    "browser": true
-   }
+{
+  "compilerOptions": {
+    "allowJs": true
   }
- ]
 }
 ```
 
-It's a good idea to override files/env as they usually depend on the project.
 
-## Using pnpm ?
+In eslint.config.(m)js:
 
-Put these into your ~/.npmrc
-
-```rc
-public-hoist-pattern[]=eslint
-public-hoist-pattern[]=eslint-*
-public-hoist-pattern[]=@kapouer/eslint-plugin-no-return-in-loop
+```js
+import getConfig from "@kapouer/eslint-config";
+export default getConfig({ mocha: "test/*.js" });
 ```
+
