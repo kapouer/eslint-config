@@ -4,7 +4,7 @@ import { join } from 'node:path';
 const root = process.env.INIT_CWD;
 if (!root) process.exit(0);
 
-const required = { allowJs: true, checkJs: true };
+const required = { allowJs: true };
 
 for (const name of ['tsconfig.json', 'jsconfig.json']) {
 	const file = join(root, name);
