@@ -31,6 +31,7 @@ const config = {
 		"no-unused-vars": ["warn", {
 			"args": "none"
 		}],
+		"@typescript-eslint/no-unused-vars": "off",
 		"no-restricted-globals": ["error", {
 			"name": "name",
 			"message": "Do not use 'name' global variable"
