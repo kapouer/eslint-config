@@ -1,1 +1,3 @@
-export { default } from "./index.js"
+import getConfig from "./index.js";
+const config = getConfig();
+export default config;
