@@ -80,13 +80,20 @@ const config = {
 			checkForEach: true
 		}],
 		"redos-detector/no-unsafe-regex": "error",
-		"@typescript-eslint/no-unnecessary-condition": "off"
+		'@typescript-eslint/no-unsafe-assignment': 'off',
+		'@typescript-eslint/no-unsafe-call': 'off',
+		'@typescript-eslint/no-unsafe-member-access': 'off',
+		'@typescript-eslint/no-unsafe-return': 'off',
+		'@typescript-eslint/no-unsafe-argument': 'off',
 	},
 	languageOptions: {
 		ecmaVersion: 2024,
 		globals: {
 			...globals.browser,
 			...globals.node
+		},
+		parserOptions: {
+			projectService: true,
 		},
 		parser: tseslint.parser
 	},
@@ -101,16 +108,18 @@ const config = {
 export default function kapouerConfig({ mocha } = {}) {
 	const list = [
 		js.configs.recommended,
-		tseslint.configs.recommended,
+		tseslint.configs.recommendedTypeChecked,
 		config
 	];
 	if (mocha) list.push({
 		languageOptions: {
 			globals: {
 				...globals.mocha
+			},
+			parserOptions: {
+				projectService: true,
 			}
 		},
 	});
 	return defineConfig(list);
 };
-

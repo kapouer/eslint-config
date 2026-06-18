@@ -8,7 +8,12 @@
   ],
   "type": "module",
   "main": "index.js",
-  "files": [],
+  "files": [
+    "postinstall.js"
+  ],
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kapouer/eslint-config.git"
